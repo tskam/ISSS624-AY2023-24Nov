@@ -1,0 +1,66 @@
+---
+title: "Lesson 1: Geospatial Data Science and Visualisation"
+date: "13 Nov, 2023"
+date-modified: "last-modified"
+format: html
+---
+
+## Overview
+
+In this lesson, R objects used to import, integrate, wrangle, process and visualise geospatial data will be discussed. The discussion will focus on `sf` and `tmap` packages. Other R packages for storing (i.e. sp), transforming (i.e. rgdal) and processing (i.e. rgeos) geospatial data will be discussed briefly too.
+
+## Content
+
+-   Geospatial Data Science
+    -   An overview of Geospatial Data Models
+    -   Map Projection and Georeferencing
+    -   Geocoding
+    -   Classes of Spatial Data in R: Simple features class
+-   Geospatial Visualisation
+    -   Classification of maps
+    -   Principles of map design
+    -   Thematic mapping techniques
+    -   Analytical mapping techniques
+
+## Lesson Slides
+
+-   [Lesson 1: Geospatial Data Science with R](..\lesson\Lesson01\Lesson01-Geospatial_Data_Science.html).
+-   [Lesson 1: GeoVisualisation and Analytical Mapping](..\lesson\Lesson01\Lesson01-GeoVis_and_Analytical_Mapping.html).
+
+## Hands-on Exercise
+
+-   [Geospatial Data Wrangling with R](https://r4gdsa.netlify.app/chap01.html)
+-   [Choropleth Mapping with R](https://r4gdsa.netlify.app/chap02.html)
+
+### Self-reading Before Meet-up
+
+To read before class:
+
+-   Chapter 2. [Codifying the neighbourhood structure](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-f-chapitre-2.pdf) of [Handbook of Spatial Analysis: Theory and Application with R](https://www.insee.fr/en/information/3635545).
+
+Alternatively
+
+-   Chapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1.
+
+## References
+
+-   François Bavaud (2010) ["Models for Spatial Weights: A Systematic Look"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1998.tb00394.x) *Geographical Analysis*, Vol. 30, No.2, pp 153-171.
+
+-   Tony H. Grubesic and Andrea L. Rosso (2014) ["The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults"](https://www-jstor-org.libproxy.smu.edu.sg/stable/26326897?sid=primo&seq=1#metadata_info_tab_contents), *Cityscape*, Vol. 16, No. 2, pp. 205-214.
+
+## All About R
+
+-   [sf](https://r-spatial.github.io/sf/) package.
+
+    -   [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
+    -   [Reading, Writing and Converting Simple Features](https://r-spatial.github.io/sf/articles/sf2.html)
+    -   [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html)
+    -   [Manipulating Simple Features](https://r-spatial.github.io/sf/articles/sf4.html)
+
+-   [tmap: thematic maps in R](https://r-tmap.github.io/tmap/)
+
+-   [sfdep](https://sfdep.josiahparry.com/) package.
+
+    -   [The Basics of sfdep](https://sfdep.josiahparry.com/articles/basics-of-sfdep)
+    -   [dnearneigh()](https://r-spatial.github.io/spdep/reference/dnearneigh.html)
+    -   [knearneigh()](https://r-spatial.github.io/spdep/reference/knearneigh.html)
