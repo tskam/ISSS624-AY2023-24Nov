@@ -642,5 +642,145 @@
     "title": "Lesson 2: Spatial Weights and Applications",
     "section": "References",
     "text": "References\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214.\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127. - Moran’s I\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SIM.html#content",
+    "href": "lesson/Lesson03/Lesson03-SIM.html#content",
+    "title": "Lesson 3: Spatial Interaction Models",
+    "section": "Content",
+    "text": "Content\n\nCharacteristics of Spatial Interaction Data\nSpatial Interaction Models\n\nUnconstrained\nOrigin constrined\nDestination constrained\nDoubly constrained"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SIM.html#what-spatial-interaction-models-are",
+    "href": "lesson/Lesson03/Lesson03-SIM.html#what-spatial-interaction-models-are",
+    "title": "Lesson 3: Spatial Interaction Models",
+    "section": "What Spatial Interaction Models are?",
+    "text": "What Spatial Interaction Models are?\n\n\nSpatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.\n\n\n\n\n\n\n\n\nNote\n\n\nSpatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SIM.html#constructing-an-od-matrix",
+    "href": "lesson/Lesson03/Lesson03-SIM.html#constructing-an-od-matrix",
+    "title": "Lesson 3: Spatial Interaction Models",
+    "section": "Constructing an O/D Matrix",
+    "text": "Constructing an O/D Matrix\n\nThe construction of an origin / destination matrix requires directional flow information between a series of locations.\nFigure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SIM.html#three-basic-types-of-interaction-models",
+    "href": "lesson/Lesson03/Lesson03-SIM.html#three-basic-types-of-interaction-models",
+    "title": "Lesson 3: Spatial Interaction Models",
+    "section": "Three Basic Types of Interaction Models",
+    "text": "Three Basic Types of Interaction Models\n\nThe general formulation of the spatial interaction model is stated as Tij, which is the interaction between location i (origin) and location j (destination). Vi are the attributes of the location of origin i, Wj are the attributes of the location of destination j, and Sij are the attributes of separation between the location of origin i and the location of destination j.\nFrom this general formulation, three basic types of interaction models can be derived:"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SIM.html#gravity-models",
+    "href": "lesson/Lesson03/Lesson03-SIM.html#gravity-models",
+    "title": "Lesson 3: Spatial Interaction Models",
+    "section": "Gravity Models",
+    "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\nTij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#content",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#content",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "Content",
+    "text": "Content\n\nIntroducing Regression Modelling\n\nSimple Linear Regression\nMultiple Linear Regression\n\nWhat is Spatial Non-stationary\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\n\nInterpreting and Visualising"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#the-why-questions",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#the-why-questions",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "The WHY Questions",
+    "text": "The WHY Questions\n\nWhy some condominium units were transacted at relatively higher prices than others?"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#the-why-questions-1",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#the-why-questions-1",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "The WHY Questions",
+    "text": "The WHY Questions\nWhy condominium units located at the central part of Singapore were transacted at relatively higher prices than others?"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#what-is-regression-analysis",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#what-is-regression-analysis",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "What is regression analysis?",
+    "text": "What is regression analysis?\n\nA set of statistical processes for explaining the relationships among variables.\nThe focus is on the relationship between a dependent variable (y) and one or more independent variables (x)\n\nDoes X affect Y? If so, how?\nWhat is the change in Y given a one unit change in X?\n\nEstimate outcomes based on the relationships modelled."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#assumptions-of-linear-regression-models",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#assumptions-of-linear-regression-models",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "Assumptions of linear regression models",
+    "text": "Assumptions of linear regression models\n\nLinearity assumption. The relationship between the dependent variable and independent variables is (approximately) linear.\nNormality assumption. The residual errors are assumed to be normally distributed.\nHomogeneity of residuals variance. The residuals are assumed to have a constant variance (homoscedasticity).\nThe residuals are uncorrelated with each other.\n\nserial correlation, as with time series\n\n(Optional) The errors (residuals) are normally distributed and have a 0 population mean.]"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#spatial-non-stationary",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#spatial-non-stationary",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "Spatial Non-stationary",
+    "text": "Spatial Non-stationary\n\nWhen applied to spatial data, as can be seen, it assumes a stationary spatial process.\n\nThe same stimulus provokes the same response in all parts of the study region.\nHighly untenable for spatial process."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#geographically-weighted-regression-gwr",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#geographically-weighted-regression-gwr",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "Geographically Weighted Regression (GWR)",
+    "text": "Geographically Weighted Regression (GWR)\n\nLocal statistical technique to analyze spatial variations in relationships.\nSpatial non-stationarity is assumed and will be tested.\nBased on the “First Law of Geography”: everything is related with everything else, but closer things are more related."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-gwr.html#references",
+    "href": "lesson/Lesson04/Lesson04-gwr.html#references",
+    "title": "Lesson 4: Geographically Weighted Regression",
+    "section": "References",
+    "text": "References\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) [“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. Journal of Regional Science, 39(3), 497-524.\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#content",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#content",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "Content",
+    "text": "Content\n\nWhat is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#what-is-predictive-modelling",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#what-is-predictive-modelling",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "What is Predictive Modelling?",
+    "text": "What is Predictive Modelling?\n\n\n\nPredictive modelling uses statistical learning or machine learning techniques to predict outcomes.\n\nBy and large, the event one wants to predict is in the future. However, a set of known outcome and predictors (also known as variables) will be used to calibrate the predictive models."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#what-is-geospatial-predictive-modelling",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#what-is-geospatial-predictive-modelling",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "What is Geospatial Predictive Modelling",
+    "text": "What is Geospatial Predictive Modelling\n\nGeospatial predictive modelling is conceptually rooted in the principle that the occurrences of events being modeled are limited in distribution.\n\nWhen geographically referenced data are used, occurrences of events are neither uniform nor random in distribution over space. There are geospatial factors (infrastructure, sociocultural, topographic, etc.) that constrain and influence where the locations of events occur.\nGeospatial predictive modeling attempts to describe those constraints and influences by spatially correlating occurrences of historical geospatial locations with environmental factors that represent those constraints and influences."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#predictive-modelling-process",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#predictive-modelling-process",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "Predictive Modelling Process",
+    "text": "Predictive Modelling Process"
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#introducing-recursive-partitioning",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#introducing-recursive-partitioning",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "Introducing recursive partitioning",
+    "text": "Introducing recursive partitioning\n\nA predictive methodology involving a dependent variable y and one and more predictors.\nThe dependent variable can be either a continuous or categorical scales.\nRules partition data into mutually exclusive groups.\nNo need to worry about transformations such as logs.\nNo prior distribution requirement."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "Advanced Recursive Partitioning: Random Forest",
+    "text": "Advanced Recursive Partitioning: Random Forest\nRandom forest, like its name implies, consists of a large number of individual decision trees that operate as an ensemble. - Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction as shown the figure."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "href": "lesson/Lesson05/Lesson05-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "title": "Lesson 5: Geographically Weighted Random Forest",
+    "section": "Introducing Geographically Weighted Random Forest (gwRF)",
+    "text": "Introducing Geographically Weighted Random Forest (gwRF)\n\nGeographically Weighted Random Forest (GRF) is a spatial analysis method using a local version of the famous Machine Learning algorithm.\n\nThis technique adopts the idea of the Geographically Weighted Regression.\nThe main difference between a tradition (linear) GWR and GRF is that we can model non-stationarity coupled with a flexible non-linear model which is very hard to overfit due to its bootstrapping nature, thus relaxing the assumptions of traditional Gaussian statistics."
   }
 ]
