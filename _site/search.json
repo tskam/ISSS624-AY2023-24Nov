@@ -523,5 +523,124 @@
     "title": "Lesson 1: GeoVisualisation and Analytical Mapping: tmap Methods",
     "section": "References",
     "text": "References\nAll About tmap package\n\ntmap: Thematic Maps in R\nDevelopment site\ntmap Reference\ntmap: get started!\ntmap: version changes\ntmap: creating thematic maps in a flexible way (useR!2015)\nExploring and presenting maps with tmap (useR!2017)"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#content",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#content",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Content",
+    "text": "Content\n\nIntroduction to Spatial Weights\n\nContiguity-Based Spatial Weights\nDistance-Band Spatial Weights\n\nWhat is Spatial Autocorrelation\nMeasures of Global Spatial Autocorrelation\nLocalised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\nCluster and Outlier Analysis\n\nEmerging Hot Spot Analysis (EHSA)\n\nA Spacetime Cubes\n\n\n\nThis lesson consists of three main sections. First, I am going to explain the basic concept of spatial weights. This is followed by a discussion on various methods used to compute spatial weights. Lastly, the applications of spatial weights will be discussed."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#what-is-geographically-referenced-attribute",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#what-is-geographically-referenced-attribute",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "What is geographically referenced attribute?",
+    "text": "What is geographically referenced attribute?\n\n\nRows: 323\nColumns: 12\n$ SUBZONE_N        &lt;chr&gt; \"MARINA SOUTH\", \"PEARL'S HILL\", \"BOAT QUAY\", \"HENDERS…\n$ SUBZONE_C        &lt;fct&gt; MSSZ01, OTSZ01, SRSZ03, BMSZ08, BMSZ03, BMSZ07, BMSZ0…\n$ PLN_AREA_N       &lt;fct&gt; MARINA SOUTH, OUTRAM, SINGAPORE RIVER, BUKIT MERAH, B…\n$ PLN_AREA_C       &lt;fct&gt; MS, OT, SR, BM, BM, BM, BM, SR, QT, QT, QT, BM, ME, R…\n$ REGION_N         &lt;fct&gt; CENTRAL REGION, CENTRAL REGION, CENTRAL REGION, CENTR…\n$ REGION_C         &lt;fct&gt; CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, C…\n$ YOUNG            &lt;dbl&gt; NA, 1100, 0, 2620, 2840, 2910, 2850, 0, 1120, 30, NA,…\n$ `ECONOMY ACTIVE` &lt;dbl&gt; NA, 3420, 50, 7500, 6260, 7560, 8340, 50, 2750, 210, …\n$ AGED             &lt;dbl&gt; NA, 2110, 20, 3260, 1630, 3310, 3590, 10, 560, 50, NA…\n$ TOTAL            &lt;dbl&gt; NA, 6630, 70, 13380, 10730, 13780, 14780, 60, 4430, 2…\n$ DEPENDENCY       &lt;dbl&gt; NA, 0.9385965, 0.4000000, 0.7840000, 0.7140575, 0.822…\n$ geometry         &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((31495.56 30..., MULTIPOL…\n\n\n\nA kind of data that is very similar to an ordinary data. The only difference is that each observation is associated with some form of geography such as numbers of aged population by planning subzone."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#what-are-spatial-weights-wij",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#what-are-spatial-weights-wij",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "What are Spatial Weights (wij)",
+    "text": "What are Spatial Weights (wij)\n\nA way to define spatial neighbourhood.\n\n\n\nBefore we can perform statistics test of spatial randomness, we need to understand how spatial relationship among geographical areas can be defined mathematically."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#applications-of-spatial-weights",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#applications-of-spatial-weights",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Applications of Spatial Weights",
+    "text": "Applications of Spatial Weights\nFormally, for observation i, the spatial lag of yi, referred to as [Wy]i (the variable Wy observed for location i) is:\n\nwhere the weights wij consist of the elements of the i-th row of the matrix W, matched up with the corresponding elements of the vector y.\n\nWith a neighbor structure defined by the non-zero elements of the spatial weights matrix W, a spatially lagged variable is a weighted sum or a weighted average of the neighboring values for that variable. In most commonly used notation, the spatial lag of y is then expressed as Wy."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#what-is-spatial-autocorrelation",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#what-is-spatial-autocorrelation",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "What is Spatial Autocorrelation",
+    "text": "What is Spatial Autocorrelation\n\nToble’s First Law of Geography\nSpatial Dependency\nSpatial Autocorrelation\n\nPositive autocorrelation\nNegative autocorrelation"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#measures-of-global-spatial-autocorrelation",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#measures-of-global-spatial-autocorrelation",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Measures of Global Spatial Autocorrelation",
+    "text": "Measures of Global Spatial Autocorrelation\n\nMoran’s I\nGeary’s c"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#measures-of-global-highlow-clustering-getis-ord-global-g",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#measures-of-global-highlow-clustering-getis-ord-global-g",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Measures of Global High/Low Clustering: Getis-Ord Global G",
+    "text": "Measures of Global High/Low Clustering: Getis-Ord Global G\n\n\n\nGetis-Ord Global G statistic is concerned with the overall concentration or lack of concentration in all pairs that are neighbours given the definition of neighbouring areas.\nThe variable must contain only positive values to be used.\n\n\n\nSource: Getis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#local-spatial-autocorrelation-statistics",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#local-spatial-autocorrelation-statistics",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Local Spatial Autocorrelation Statistics",
+    "text": "Local Spatial Autocorrelation Statistics\n\nA collection of geospatial statistical analysis methods for analysing the location related tendency (clusters or outliers) in the attributes of geographically referenced data (points or areas).\nCan be indecies decomposited from their global measures such as local Moran’s I, local Geary’s c, and Getis-Ord Gi*.\nThese spatial statistics are well suited for:\n\ndetecting clusters or outliers;\nidentifying hot spot or cold spot areas;\nassessing the assumptions of stationarity; and\nidentifying distances beyond which no discernible association obtains."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#local-indicator-of-spatial-association-lisa",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#local-indicator-of-spatial-association-lisa",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Local Indicator of Spatial Association (LISA)",
+    "text": "Local Indicator of Spatial Association (LISA)\n\nA subset of localised geospatial statistics methods.\nAny spatial statistics that satisfies the following two requirements (Anselin, L. 1995):\n\nthe LISA for each observation gives an indication of the extent of significant spatial clustering of similar values around that observation;\nthe sum of LISAs for all observations is proportional to a global indicator of spatial association."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#local-morans-i",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#local-morans-i",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Local Moran’s I",
+    "text": "Local Moran’s I\nGiven a geographically referenced attribute field, X the formula of local Moran’s I is:"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#detecting-hot-and-cold-spot-areas",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#detecting-hot-and-cold-spot-areas",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Detecting hot and cold spot areas",
+    "text": "Detecting hot and cold spot areas\n\n\n\nGiven a set of geospatial features (i.e. points or polygons) and an analysis field, the spatial statistics tell you where features with either high (i.e. hot spots) or low values (cold spots) cluster spatially.\nThe spatial statistic used is called Getis-Ord Gi* statistic (pronounced G-i-star).\nGetis and Ord (1992) define the local G and G∗ statistics for region i (i=1,···,n) as:"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#fixed-weighting-scheme",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#fixed-weighting-scheme",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Fixed weighting scheme",
+    "text": "Fixed weighting scheme\n\n\n\nThings to consider if fixed distance is used: - All features should have at least one neighbour.\n\nNo feature should have all other features as neighbours.\nEspecially if the values for the input field are skewed, you want features to have about eight neighbors each.\nMight produce large estimate variances where data are sparse, while mask subtle local variations where data are dense.\nIn extreme condition, fixed schemes might not be able to calibrate in local areas where data are too sparse to satisfy the calibration requirements (observations must be more than parameters)."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#adaptive-weighting-schemes",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#adaptive-weighting-schemes",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Adaptive weighting schemes",
+    "text": "Adaptive weighting schemes\n\n\n\nAdaptive schemes adjust itself according to the density of data\n\nShorter bandwidths where data are dense and longer where sparse.\nFinding nearest neighbors are one of the often used approaches.\n\n\n\n]"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#best-practice-guidelines",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#best-practice-guidelines",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Best practice guidelines",
+    "text": "Best practice guidelines\n\nResults are only reliable if the input feature class contains at least 30 features.\nThe input field mst be in continuous data type such as a count, rate, or other numeric measurement, no categorical attribute field is allowed."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#emerging-hot-spot-analysis-ehsa",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#emerging-hot-spot-analysis-ehsa",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "Emerging Hot Spot Analysis (EHSA)",
+    "text": "Emerging Hot Spot Analysis (EHSA)\n\nA technique that falls under exploratory spatial data analysis (ESDA).\nIt combines the traditional ESDA technique of hot spot analysis using the Getis-Ord Gi* statistic with the traditional time-series Mann-Kendall test for monotonic trends.\nThe goal of EHSA is to evaluate how hot and cold spots are changing over time. It helps us answer the questions: are they becoming increasingly hotter, are they cooling down, or are they staying the same?"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#in-colclusion",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#in-colclusion",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "In colclusion",
+    "text": "In colclusion\nSpatial statistics methods are not a blackbox. Before performing the analysis, a geospatial analyst should consider the followings:\n\nWhat is the geographical question?\nWhat is the geospatial feature?\nWhat is the analysis field?\nWhich conceptualization of spatial relationships is appropriate?"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GLMSA.html#references",
+    "href": "lesson/Lesson02/Lesson02-GLMSA.html#references",
+    "title": "Lesson 2: Spatial Weights and Applications",
+    "section": "References",
+    "text": "References\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214.\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127. - Moran’s I\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206."
   }
 ]
