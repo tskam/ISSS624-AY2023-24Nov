@@ -915,5 +915,12 @@
     "title": "Take-home Exercise 1: Geospatial Analytics for Public Good",
     "section": "Learning from seniors",
     "text": "Learning from seniors\n\nCHUA YAN TING  Have done well in all five grading criteria especially the geocommunication criterion.\nLIN SHUYAN  Geospatial data wrangling is very comprehensively done especially identifying water points located outside Nigeria administrative boundary due to location precision issue.\nLOH SI YING Have done well in all five grading criteria especially the followings: (i) the geospatial wrangling are very comprehensively done including to exclude LGAs without water points from the analysis, (ii) managed to compute the p-values, (iii) Start each analysis by explaining the purpose of the analysis. Managed to relate the analysis results to the location context.\nONG ZHI RONG JORDAN  A good example to learn geospatial data wrangling. Full of useful code chunk to learn from. Alternative approach to derive significant Gi.\nZHU YITING  Provide a useful discussion on how to extract and download both data sets from their respective sources."
+  },
+  {
+    "objectID": "Take-home_Ex01.html#survival-tips",
+    "href": "Take-home_Ex01.html#survival-tips",
+    "title": "Take-home Exercise 1: Geospatial Analytics for Public Good",
+    "section": "Survival Tips",
+    "text": "Survival Tips\n\nCreate spatial square/hexagon grids and count points inside in R with sf"
   }
 ]

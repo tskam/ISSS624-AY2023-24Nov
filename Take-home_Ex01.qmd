@@ -89,6 +89,10 @@ This exercise will be graded by using the following criteria:
 
 3rd December 2023 (Sunday), 11.59pm (midnight).
 
+## Survival Tips
+
+- [Create spatial square/hexagon grids and count points inside in R with sf](https://urbandatapalette.com/post/2021-08-tessellation-sf/)
+
 ## Learning from seniors
 
 -   [CHUA YAN TING](https://isss624-amelia.netlify.app/exercises/take-home_ex1/take-home_ex1) ![](img/thumbup1.jpg) Have done well in all five grading criteria especially the geocommunication criterion.
@@ -102,3 +106,7 @@ This exercise will be graded by using the following criteria:
 -   [ZHU YITING](https://yiting-is-learning-geospatial.netlify.app/take-home_ex/take-home_ex1/take-home_ex1) ![](img/thumbup1.jpg) Provide a useful discussion on how to extract and download both data sets from their respective sources.
 
 ## Peer Learning
+
+
+
+
