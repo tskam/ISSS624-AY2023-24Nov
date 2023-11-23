@@ -1,0 +1,186 @@
+---
+title: "Take-home Exercise 2: Regionalisation of Multivariate Water Point Attributes with Non-spatially Constrained and Spatially Constrained Clustering Methods"
+editor: visual
+---
+
+## Setting the Scene
+
+According to [The World Bank](https://blogs.worldbank.org/transport/smart-mobility-it-time-re-think-urban-mobility), urban mobility was traditionally about “moving people from one location to another location within or between urban areas”.  This notion was based on two principles: people needed to access housing, jobs and other urban services such as education and entertainment, and they displayed a preference for motorised mobility due to its cost efficiency. 
+
+But in recent years, there has been a shift in these perspectives in the minds of Transit Agencies and local governments who now recognise that online services limit a person’s need for transport.  
+
+Today, urban mobility is no longer just about moving people around by motorized vehicles. What people really need is the accessibility to various urban services. Numerous examples from different cities have demonstrated that better accessibility doesn’t have to be achieved by generating motorized traffic, particularly by private vehicles. 
+
+## Objectives
+
+In this take-home exercise you are required to regionalise Nigeria by using, but not limited to the following measures:
+
+-   Total number of functional water points
+-   Total number of nonfunctional water points
+-   Percentage of functional water points
+-   Percentage of non-functional water points
+-   Percentage of main water point technology (i.e. Hand Pump)
+-   Percentage of usage capacity (i.e. \< 1000, \>=1000)
+-   Percentage of rural water points
+
+## The Data
+
+### Apstial data
+
+For the purpose of this assignment, data from [WPdx Global Data Repositories](https://www.waterpointdata.org/access-data/) will be used. There are two versions of the data. They are: WPdx-Basic and WPdx+. You are required to use WPdx+ data set.
+
+### Geospatial data
+
+Nigeria Level-2 Administrative Boundary (also known as Local Government Area) polygon features GIS data will be used in this take-home exercise. The data can be downloaded either from The [Humanitarian Data Exchange](https://data.humdata.org/) portal or [geoBoundaries](https://www.geoboundaries.org/index.html).
+
+## The Task
+
+The specific tasks of this take-home exercise are as follows:
+
+-   Using appropriate sf method, import the shapefile into R and save it in a simple feature data frame format. Note that there are three Projected Coordinate Systems of Nigeria, they are: EPSG: 26391, 26392, and 26303. You can use any one of them.
+-   Using appropriate tidyr and dplyr methods, derive the proportion of functional and non-functional water point at LGA level (i.e. ADM2).
+-   Combining the geospatial and aspatial data frame into simple feature data frame.
+-   Delineating water point measures functional regions by using conventional hierarchical clustering.
+-   Delineating water point measures functional regions by using spatially constrained clustering algorithms.
+
+### Thematic Mapping
+
+-   Plot to show the water points measures derived by using appropriate statistical graphics and choropleth mapping technique.
+
+### Analytical Mapping
+
+-   Plot functional regions delineated by using both non-spatially constrained and spatially constrained clustering algorithms.
+
+## Grading Criteria
+
+This exercise will be graded by using the following criteria:
+
+-   **Geospatial Data Wrangling (20 marks):** This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readr, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).
+
+-   **Geospatial Analysis (25 marks):** In this exercise, you are expected to use the appropriate clustering methods and R packages functions introduced in class to regionalise the study area. You will be assessed on your ability to apply the methods learned correctly and efficiently.
+
+-   **Geovisualisation and Geocommunication (25 marks):** In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.
+
+-   **Reproducibility (20 marks):** This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Markdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.
+
+-   **Bonus (10 marks):** Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature.
+
+## Submission Instructions
+
+-   The write-up of the take-home exercise must be in **Quarto html document** format. You are required to publish the write-up on [**Netlify**](https://www.netlify.com/).
+-   The R project of the take-home exercise must be pushed onto your [Github](https://github.com/) repository.
+-   You are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn.
+
+## Due Date
+
+11th December 2022 (Sunday), 11.59pm (midnight).
+
+## Peer Learning
+
+-   [ANICA CLARICE ANTONELLA PASCUAL GALANO](https://acapgeolano.netlify.app/take-home_ex/take-home_ex1/take-home_ex1)
+
+-   [CAO FEI](https://feicao.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [CHE XUAN](https://r4dsa4ga.netlify.app/take-home_ex/take-home_ex2)
+
+-   [CHEN FANGXIAN](https://isss624chenfx.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [CHEN HAOYE ROGER](https://isss624rogerchen.netlify.app/take-home_ex/take-home_ex2/take-home_ex2#computing-hierarchical-clustering)
+
+-   [CHONG JIA HUI KATHYRN KELLYNE](https://isss624-kathyrnchong.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [CHONG KOK WEI ALLAN CHONG](https://mitb-isss624-ackw-gis-analytics.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [CHUA YAN TING](https://isss624-amelia.netlify.app/exercises/take-home_ex2/take-home_ex2)
+
+-   [HAN SHUMIN](https://master--hanshuminisss624.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [HULWANA BINTE SAIFULZAMAN](https://hulwana-geospatial.netlify.app/take-home_ex/take-home_ex2/take-home_ex2_revised)
+
+-   [KWA KAH BOON](https://kaleidoscopic-bunny-isss624.netlify.app/take-home_ex/take-home_ex2)
+
+-   [LAI WEI SONG](https://isss624-leprekonsg.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [LAM YU HAY GLADWIN](https://gladwin-geospatial-analysis.netlify.app/takehome/takehome2/takehome2)
+
+-   [LE THANH THAO](https://gsaiss624.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [LE TRAN THUY DUNG](https://isss624-1stcommit.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [LEE CHEE TIAN](https://leecheetian-isss624.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [LEY MINGHUI JONATHAN](https://isss624-jonathanley.netlify.app/take-home_ex/take-home%20ex2)
+
+-   [LIM JUN LING](https://geospatialsunshine.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [LIN SHUYAN](https://lins-92-isss624.netlify.app/take-home_ex02/take-home_ex02)
+
+-   [LOH SI YING](https://lohsiying.netlify.app/take_home_ex/ex2/take-home-ex2.html)
+
+-   [LOW POH SING JEFFREY](https://isss624jeffreylowps.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [LYNN KWONG]()
+
+-   [ONG ZHI RONG JORDAN](https://jordan-isss624-geospatial.netlify.app/posts/geo/geospatial_nigeriasegmentation/)
+
+-   [QUAH ZONG YOU](https://isss624-zy.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [RAVEENA CHAKRAPANI](https://raveenageospatial.netlify.app/takehomeex/ex2)
+
+-   [RIDHICA RANGARAJAN](https://isss624-ridhicar.netlify.app/take-home_ex/take-home_ex1/take-home_ex1)
+
+-   [RIDHIMA BANSAL](https://isss624-ridh27.netlify.app/take_home_ex/take_home_ex2/take_home_ex2)
+
+-   [SEAH JIAN YUAN NICHOLAS](https://isss624-sjynic.netlify.app/take_home_ex2/take_home_ex2)
+
+-   [SEAH XING XIAN](https://sxingxian-geo.netlify.app/takehome_ex/th_ex2/)
+
+-   [SHAO GUANBO](https://isss624gbshao.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [SHI CHEE LIANG](https://isss624scl.netlify.app/takehomeex/takehomeex02/takehomeex02)
+
+-   [SHINDE YOGENDRA SUNIL](https://geospatialanalytics-yogendra3.netlify.app/takehome_ex02/takehome_ex02_updated)
+
+-   [SHUBHANSHI RADHEY SHYAM JANGID](https://isss624shubhanshi.netlify.app/take-home/take-home_ex1/take-home_ex1)
+
+-   [SOE HTET](https://geospatial-analytics.netlify.app/take%20home%20exercise/take%20home%20exercise%202/take_home_ex02)
+
+-   [SUN YIPING](https://isss624-mitbsunyp.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [TAN GUOHAO](https://tanguohao.netlify.app/take-home_ex/take-home_ex2)
+
+-   [TAN YI YING](https://funny-hummingbird-yytan217.netlify.app/take-home%20exercises/take-home_ex2/take-home_ex2)
+
+-   [TAN ZEXEONG]()
+
+-   [TAO MEIZHU](https://isss624-geospatial-analytics.netlify.app/take-home%20exercise/take-home_ex2/take-home_ex2)
+
+-   [WANG QI](https://isss624wangqi.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [WANG YIZHI](https://isss624yizhi.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [WONG SHU MING BELINDA](https://isss624bw.netlify.app/takehome/takehomeex2/takehomeex2)
+
+-   [XU SIYI](https://isss624-xusiyi.netlify.app/take-home%20exercise/take-home%20ex2%20final)
+
+-   [YAN LICHENG](https://f4sared.netlify.app/take_home_ex/ex_2/ex_2.html)
+
+-   [YANG JINGYUAN](https://isss624yjy.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [YANG MINGQI](https://isss624mq.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [YANG TIANYI](https://isss624-yty.netlify.app/take-home_ex2/take-home_ex2)
+
+-   [ZENG HANG](https://isss624zh.netlify.app/take-home_ex/take-home%20ex2/take-home_ex2)
+
+-   [ZHANG YI](https://isss624zoe.netlify.app/take_home_ex2/take_home_ex2)
+
+-   [ZHAO YUETONG](https://isss624zhaoyuetong.netlify.app/take-home_ex/take-home_ex2/take-home_exercise2)
+
+-   [ZHENG KEDAN](https://isss624-zkd.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [ZHENG YIMIN](https://vermillion-lamington-9e3f61.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
+
+-   [ZHU FANGYUAN](https://isss624agaa.netlify.app/take_home_ex2/take_home_ex2)
+
+-   [ZHU YITING](https://yiting-is-learning-geospatial.netlify.app/take-home_ex/take-home_ex2/take-home_ex2)
