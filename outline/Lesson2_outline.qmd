@@ -33,6 +33,10 @@ These spatial statistics are well suited for:
     -   LISA Cluster Map
 -   Hot Spot and Cold Spot Areas Analysis
     -   Getis and Ord's G-statistics
+-   Emerging Hot Spot Analysis
+    -   Space Time Cube
+    -   Mann-Kendall test
+    -   Emerging Hot Spot Analysis
 
 ## Lesson Slides
 
@@ -62,6 +66,8 @@ To read before class:
 
 These six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers.
 
+- Sarah Gates (2017) ["Emerging Hot Spot Analysis: Finding Patterns over Space and Time"](https://www.azavea.com/blog/2017/08/15/emerging-hot-spot-spatial-statistics/)
+
 ## References
 
 -   D. A. Griffith (2009) "Spatial autocorrelation".
@@ -77,5 +83,6 @@ These six papers are classics of Global and Local Spatial Autocorrelation. Be wa
 
 -   [sfdep](https://sfdep.josiahparry.com/) package.
     -   [The Basics of sfdep](https://sfdep.josiahparry.com/articles/basics-of-sfdep)
-    -   [dnearneigh()](https://r-spatial.github.io/spdep/reference/dnearneigh.html)
-    -   [knearneigh()](https://r-spatial.github.io/spdep/reference/knearneigh.html)
+    -   [Spacetime and Spacetime cubes](https://sfdep.josiahparry.com/articles/spacetime-s3)
+    -   [Emerging Hot Spot Analysis](https://sfdep.josiahparry.com/articles/understanding-emerging-hotspots)
+    -   [Conditional Permutations with sfdep](https://sfdep.josiahparry.com/articles/conditional-permutation)

@@ -745,14 +745,16 @@ Things to consider if fixed distance is used: - All features should have at leas
 ::: columns
 ::: {.column width="50%"}
 -   Null hypothesis: There is no monotonic trend in the series.
-
 -   Alternate hypothesis: A trend exists. This trend can be positive, negative, or non-null.
+-   The test statistic
+
+![](img/image7-32.jpg){width="480"}
 :::
 
 ::: {.column width="50%"}
 The Mann-Kendall test does NOT assess the magnitude of change.
 
-The test can be used to find trends for as few as four samples. However, with only a few data points, the test has a high probability of not finding a trend when one would be present if more points were provided. The more data points you have the more likely the test is going to find a true trend (as opposed to one found by chance). The minimum number of recommended measurements is therefore at least 8 to 10.
+The test can be used to find trends for as few as **four** samples. However, with only a few data points, the test has a high probability of not finding a trend when one would be present if more points were provided. The more data points you have the more likely the test is going to find a true trend (as opposed to one found by chance). The minimum number of recommended measurements is therefore at least **8** to **10**.
 :::
 :::
 
@@ -774,7 +776,7 @@ Before running the test, you should ensure that:
 
 ::: {style="font-size: 0.60em"}
 | Pattern Name          | Defination                                                                                                                                                                                                                                                                                                               |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------|--------------------------------------------------------|
 | No pattern detected   | Does not fall into any of the hot or cold spot patterns defined below.                                                                                                                                                                                                                                                   |
 | New Hot Spot          | A location that is a statistically significant hot spot for the final time step and has never been a statistically significant hot spot before.                                                                                                                                                                          |
 | Consecutive Hot Spot  | A location with a single uninterrupted run of at least two statistically significant hot spot bins in the final time-step intervals. The location has never been a statistically significant hot spot prior to the final hot spot run and less than 90 percent of all bins are statistically significant hot spots.      |
@@ -792,7 +794,7 @@ Before running the test, you should ensure that:
 
 ::: {style="font-size: 0.60em"}
 | Pattern Name           | Definition                                                                                                                                                                                                                                                                                                                 |
-|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------|--------------------------------------------------------|
 | New Cold Spot          | A location that is a statistically significant cold spot for the final time step and has never been a statistically significant cold spot before.                                                                                                                                                                          |
 | Consecutive Cold Spot  | A location with a single uninterrupted run of at least two statistically significant cold spot bins in the final time-step intervals. The location has never been a statistically significant cold spot prior to the final cold spot run and less than 90 percent of all bins are statistically significant cold spots.    |
 | Intensifying Cold Spot | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals, including the final time step. In addition, the intensity of clustering of low counts in each time step is increasing overall and that increase is statistically significant.                                    |

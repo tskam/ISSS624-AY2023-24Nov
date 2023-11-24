@@ -27,7 +27,7 @@ In this lesson, you will learn the basic concepts and methods of geographically 
 
 ## Hands-on Exercise
 
--   [6 Calibrating Hedonic Pricing Model for Private Highrise Property with GWR Method](https://r4gdsa.netlify.app/chap06.html)
+-   [6 Calibrating Hedonic Pricing Model for Private Highrise Property with GWR Method](https://r4gdsa.netlify.app/chap13)
 
 ## Self-reading Before Meet-up
 

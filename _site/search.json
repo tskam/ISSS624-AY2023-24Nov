@@ -543,7 +543,7 @@
     "href": "outline/Lesson2_outline.html#content",
     "title": "Lesson 2: Spatial Weights and Applications",
     "section": "Content",
-    "text": "Content\n\nConcepts of Spatial Proximity and Spatial Weights\n\nTobler’s First law of Geography\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics"
+    "text": "Content\n\nConcepts of Spatial Proximity and Spatial Weights\n\nTobler’s First law of Geography\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics\n\nEmerging Hot Spot Analysis\n\nSpace Time Cube\nMann-Kendall test\nEmerging Hot Spot Analysis"
   },
   {
     "objectID": "outline/Lesson2_outline.html#lesson-slides",
@@ -564,7 +564,7 @@
     "href": "outline/Lesson2_outline.html#self-reading-before-meet-up",
     "title": "Lesson 2: Spatial Weights and Applications",
     "section": "Self-reading Before Meet-up",
-    "text": "Self-reading Before Meet-up\nTo read before class:\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127.\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306.\n\nThese six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers."
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127.\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306.\n\nThese six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers.\n\nSarah Gates (2017) “Emerging Hot Spot Analysis: Finding Patterns over Space and Time”"
   },
   {
     "objectID": "outline/Lesson2_outline.html#references",
@@ -578,7 +578,7 @@
     "href": "outline/Lesson2_outline.html#all-about-r",
     "title": "Lesson 2: Spatial Weights and Applications",
     "section": "All About R",
-    "text": "All About R\n\nsfdep package.\n\nThe Basics of sfdep\ndnearneigh()\nknearneigh()"
+    "text": "All About R\n\nsfdep package.\n\nThe Basics of sfdep\nSpacetime and Spacetime cubes\nEmerging Hot Spot Analysis\nConditional Permutations with sfdep"
   },
   {
     "objectID": "outline/Lesson3_outline.html",
