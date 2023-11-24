@@ -816,7 +816,7 @@
     "href": "Take-home_Ex01.html#the-data",
     "title": "Take-home Exercise 1: Geospatial Analytics for Public Good",
     "section": "The Data",
-    "text": "The Data\n\nApstial data\nFor the purpose of this take-home exercise, Passenger Volume by Origin Destination Bus Stops downloaded from LTA DataMall will be used.\n\n\nGeospatial data\nTwo geospatial data will be used in this study, they are:\n\nBus Stop Location from LTA DataMall. It provides information about all the bus stops currently being serviced by buses, including the bus stop code (identifier) and location coordinates.\nhexagon, a hexagon layer of 250m is provided to replace the relative coarse and irregular Master Plan 2019 Planning Sub-zone GIS data set of URA."
+    "text": "The Data\n\nApstial data\nFor the purpose of this take-home exercise, Passenger Volume by Origin Destination Bus Stops downloaded from LTA DataMall will be used.\n\n\nGeospatial data\nTwo geospatial data will be used in this study, they are:\n\nBus Stop Location from LTA DataMall. It provides information about all the bus stops currently being serviced by buses, including the bus stop code (identifier) and location coordinates.\nhexagon, a hexagon layer of 250m (this distance is the perpendicular distance between the centre of the hexagon and its edges.) should be used to replace the relative coarse and irregular Master Plan 2019 Planning Sub-zone GIS data set of URA."
   },
   {
     "objectID": "Take-home_Ex01.html#grading-criteria",
