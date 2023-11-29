@@ -24,7 +24,7 @@ In this lesson, you will learn the basic concepts and methods of Spatial Interac
 
 -   Lesson slides in [html](../lesson/Lesson03/Lesson03-SIM.html)
 
--   Handout of Hands-on Exercise 10 in [html](../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.html) and [pdf](../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.pdf) formats.
+-   Hands-on Exercise in [html](https://r4gdsa.netlify.app/chap15). 
 
 ## Self-reading Before Meet-up
 
