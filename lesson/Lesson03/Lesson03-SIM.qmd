@@ -23,21 +23,11 @@ editor: visual
     -   Destination constrained
     -   Doubly constrained
 
-## What Spatial Interaction Models are?
+## What Spatial Interaction are?
 
-::: columns
-::: {.column width="65%"}
-Spatial interaction or "gravity models" estimate the flow of people, material, or information between locations in geographical space.
+Spatial interaction describe quatitatively the flow of people, material, or information between locations in geographical space.
 
 ![](img/image10-1.jpg)
-:::
-
-::: {.column width="35%"}
-::: callout-note
-Spatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.
-:::
-:::
-:::
 
 ------------------------------------------------------------------------
 
@@ -45,7 +35,7 @@ Spatial interaction models seek to explain existing spatial flows. As such it is
 
 -   Three interdependent conditions are necessary for a spatial interaction to occur:
 
-![](img/image10-2.jpg)
+![](img/image10-2.jpg){fig-align="center"}
 
 ::: notes
 -   **Complementarity**. There must be a supply and a demand between the interacting locations. A residential zone is complementary to an employment zone because the first is supplying workers while the second is supplying jobs. The same can be said concerning the complementarity between a store and its customers and between an industry and its suppliers (movements of freight). An economic system is based on a large array of complementary activities.
@@ -84,14 +74,14 @@ Representing mobility as a spatial interaction involves several considerations:
 -   The construction of an origin / destination matrix requires directional flow information between a series of locations.
 -   Figure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow.
 
-![](img/image10-4.jpg)
+![](img/image10-4.jpg){fig-align="center"}
 
 ## Three Basic Types of Interaction Models
 
 -   The general formulation of the spatial interaction model is stated as **Tij**, which is the interaction between location i (origin) and location j (destination). **Vi** are the attributes of the location of origin i, **Wj** are the attributes of the location of destination j, and **Sij** are the attributes of separation between the location of origin i and the location of destination j.
 -   From this general formulation, three basic types of interaction models can be derived:
 
-![](img/image10-5.jpg)
+![](img/image10-5.jpg){fig-align="center"}
 
 ## Gravity Models
 
@@ -100,9 +90,9 @@ Representing mobility as a spatial interaction involves several considerations:
 ::: {.column width="50%"}
 The general formula (also known as unconstrained):
 
-![](img/image10-6a.jpg)
+![](img/image10-6a.jpg){fig-align="center" width="250"}
 
--   Tij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.
+-   𝛵~𝑖𝑗~ is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.
 -   𝑉 is a vector (a 1 dimensional matrix -- or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 -- this could be any of the origin-related variables.
 :::
 
@@ -110,6 +100,10 @@ The general formula (also known as unconstrained):
 -   𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 -- similarly, this could be any of the destination related variables.
 -   𝑑 is a matrix of costs (frequently distances -- hence, d) relating to the flows between 𝑖 and 𝑗.
 -   𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.
+
+::: callout-note
+Spatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.
+:::
 :::
 :::
 :::
@@ -148,20 +142,30 @@ and the calculation T11
 
 ::: columns
 ::: {.column width="50%"}
+The formula:
+
+![](img/image10-6b1.jpg)
+
+where
+
+![](img/image10-6b2.jpg)
+
+and
+
+![](img/image10-6b3.jpg)
+:::
+
+::: {.column width="50%"}
 In the Origin Constrained Model,
 
 -   𝑂𝑖 does not have a parameter as it is a known **constraint**.
 -   𝐴𝑖 is known as a **balancing factor** and is a vector of values which relate to each origin 𝑖 which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals 𝑂𝑖 rather than just the overall total.
 :::
-
-::: {.column width="50%"}
-![](img/image10-6b.jpg)
-:::
 :::
 
 ------------------------------------------------------------------------
 
-### Oringin (Production) constrained case
+### Origin (Production) constrained case
 
 ::: columns
 ::: {.column width="50%"}
@@ -197,7 +201,24 @@ Hence, T11 is calculated as shown below:
 
 ::: columns
 ::: {.column width="50%"}
-![](img/image10-8a.jpg)
+The formula:
+
+![](img/image10-6c1.jpg)
+
+where
+
+![](img/image10-6c2.jpg)
+
+and
+
+![](img/image10-6c3.jpg)
+:::
+
+::: {.column width="50%"}
+In the Destination Constrained Model,
+
+-   *Dj* does not have a parameter as it is a known **constraint**.
+-   *Bj* is known as a **balancing factor** and is a vector of values which relate to each destination *j* which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals *Dj* rather than just the overall total.
 :::
 :::
 
@@ -239,7 +260,19 @@ Hence, T11 is calculated as shown below:
 
 ::: columns
 ::: {.column width="50%"}
-![](img/image10-9a.jpg)
+![](img/image10-9a1.jpg){width="380"}
+
+where
+
+![](img/image10-6b2.jpg){width="220"}
+
+![](img/image10-6c2.jpg){width="200"}
+
+and
+
+![](img/image10-9a2.jpg){width="300"}
+
+![](img/image10-9a3.jpg){width="300"}
 :::
 
 ::: {.column width="50%"}
@@ -278,6 +311,12 @@ Hence, T11 is calculated as shown below:
 Notice that A1 and B1 are computed by using computer.
 :::
 :::
+
+## Effects of beta, alpha and lambda on Spatial Interactions
+
+Variations of the beta, alpha, and lambda exponents have different impacts on the level of spatial interactions.
+
+![](img/image10-10.jpg)
 
 ```{r}
 #| eval: false

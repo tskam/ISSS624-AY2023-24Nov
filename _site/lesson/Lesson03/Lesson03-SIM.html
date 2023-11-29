@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.361">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong  Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2023-11-24">
+  <meta name="dcterms.date" content="2023-11-29">
   <title>ISSS624 Applied Geospatial Analytics - Lesson 3: Spatial Interaction Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -339,7 +339,7 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">24 Nov 2023</p>
+  <p class="date">29 Nov 2023</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
@@ -354,29 +354,11 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 </ul></li>
 </ul>
 </section>
-<section id="what-spatial-interaction-models-are" class="slide level2">
-<h2>What Spatial Interaction Models are?</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<p>Spatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.</p>
-<p><img data-src="img/image10-1.jpg"></p>
-</div><div class="column" style="width:35%;">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Spatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<section id="what-spatial-interaction-are" class="slide level2">
+<h2>What Spatial Interaction are?</h2>
+<p>Spatial interaction describe quatitatively the flow of people, material, or information between locations in geographical space.</p>
+
+<img data-src="img/image10-1.jpg" class="r-stretch"></section>
 <section class="slide level2">
 
 <h3 id="conditions-for-spatial-flows">Conditions for Spatial Flows</h3>
@@ -384,7 +366,7 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <li>Three interdependent conditions are necessary for a spatial interaction to occur:</li>
 </ul>
 
-<img data-src="img/image10-2.jpg" class="r-stretch"><aside class="notes">
+<img data-src="img/image10-2.jpg" class="r-stretch quarto-figure-center"><aside class="notes">
 <ul>
 <li><strong>Complementarity</strong>. There must be a supply and a demand between the interacting locations. A residential zone is complementary to an employment zone because the first is supplying workers while the second is supplying jobs. The same can be said concerning the complementarity between a store and its customers and between an industry and its suppliers (movements of freight). An economic system is based on a large array of complementary activities.</li>
 <li><strong>Intervening opportunity (lack of)</strong>. Refers to a location that may offer a better alternative as a point of origin or as a point of destination. For instance, in order to have an interaction of a customer to a store, there must not be a closer store that offers a similar array of goods. Otherwise, the customer will likely patronize the closer store and the initial interaction will not take place.</li>
@@ -444,7 +426,7 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <li>Figure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow.</li>
 </ul>
 
-<img data-src="img/image10-4.jpg" class="r-stretch"></section>
+<img data-src="img/image10-4.jpg" class="r-stretch quarto-figure-center"></section>
 <section id="three-basic-types-of-interaction-models" class="slide level2">
 <h2>Three Basic Types of Interaction Models</h2>
 <ul>
@@ -452,16 +434,20 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <li>From this general formulation, three basic types of interaction models can be derived:</li>
 </ul>
 
-<img data-src="img/image10-5.jpg" class="r-stretch"></section>
+<img data-src="img/image10-5.jpg" class="r-stretch quarto-figure-center"></section>
 <section id="gravity-models" class="slide level2">
 <h2>Gravity Models</h2>
 <div style="font-size: 0.85em">
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>The general formula (also known as unconstrained):</p>
-<p><img data-src="img/image10-6a.jpg"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/image10-6a.jpg" width="250"></p>
+</figure>
+</div>
 <ul>
-<li>Tij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.</li>
+<li>𝛵<sub>𝑖𝑗</sub> is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.</li>
 <li>𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.</li>
 </ul>
 </div><div class="column" style="width:50%;">
@@ -470,6 +456,19 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <li>𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.</li>
 <li>𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.</li>
 </ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Spatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -497,19 +496,24 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <h3 id="the-origin-production-constrained-model">The Origin (Production) Constrained Model</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
+<p>The formula:</p>
+<p><img data-src="img/image10-6b1.jpg"></p>
+<p>where</p>
+<p><img data-src="img/image10-6b2.jpg"></p>
+<p>and</p>
+<p><img data-src="img/image10-6b3.jpg"></p>
+</div><div class="column" style="width:50%;">
 <p>In the Origin Constrained Model,</p>
 <ul>
 <li>𝑂𝑖 does not have a parameter as it is a known <strong>constraint</strong>.</li>
 <li>𝐴𝑖 is known as a <strong>balancing factor</strong> and is a vector of values which relate to each origin 𝑖 which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals 𝑂𝑖 rather than just the overall total.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/image10-6b.jpg"></p>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="oringin-production-constrained-case">Oringin (Production) constrained case</h3>
+<h3 id="origin-production-constrained-case">Origin (Production) constrained case</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>The O-D Matrix</p>
@@ -532,7 +536,18 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <h3 id="the-destination-attraction-constrained-model">The Destination (Attraction) Constrained Model</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="img/image10-8a.jpg"></p>
+<p>The formula:</p>
+<p><img data-src="img/image10-6c1.jpg"></p>
+<p>where</p>
+<p><img data-src="img/image10-6c2.jpg"></p>
+<p>and</p>
+<p><img data-src="img/image10-6c3.jpg"></p>
+</div><div class="column" style="width:50%;">
+<p>In the Destination Constrained Model,</p>
+<ul>
+<li><em>Dj</em> does not have a parameter as it is a known <strong>constraint</strong>.</li>
+<li><em>Bj</em> is known as a <strong>balancing factor</strong> and is a vector of values which relate to each destination <em>j</em> which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals <em>Dj</em> rather than just the overall total.</li>
+</ul>
 </div>
 </div>
 </section>
@@ -561,7 +576,13 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <h3 id="the-doubly-constrained-model">The Doubly Constrained Model</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="img/image10-9a.jpg"></p>
+<p><img data-src="img/image10-9a1.jpg" width="380"></p>
+<p>where</p>
+<p><img data-src="img/image10-6b2.jpg" width="220"></p>
+<p><img data-src="img/image10-6c2.jpg" width="200"></p>
+<p>and</p>
+<p><img data-src="img/image10-9a2.jpg" width="300"></p>
+<p><img data-src="img/image10-9a3.jpg" width="300"></p>
 </div><div class="column" style="width:50%;">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -597,8 +618,13 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <p>Notice that A1 and B1 are computed by using computer.</p>
 </div>
 </div>
+</section>
+<section id="effects-of-beta-alpha-and-lambda-on-spatial-interactions" class="slide level2">
+<h2>Effects of beta, alpha and lambda on Spatial Interactions</h2>
+<p>Variations of the beta, alpha, and lambda exponents have different impacts on the level of spatial interactions.</p>
 
-<div class="footer footer-default">
+
+<img data-src="img/image10-10.jpg" class="r-stretch"><div class="footer footer-default">
 
 </div>
 </section>
