@@ -354,14 +354,14 @@
     "href": "lesson/Lesson03/Lesson03-SIM.html#three-basic-types-of-interaction-models",
     "title": "Lesson 3: Spatial Interaction Models",
     "section": "Three Basic Types of Interaction Models",
-    "text": "Three Basic Types of Interaction Models\n\nThe general formulation of the spatial interaction model is stated as Tij, which is the interaction between location i (origin) and location j (destination). Vi are the attributes of the location of origin i, Wj are the attributes of the location of destination j, and Sij are the attributes of separation between the location of origin i and the location of destination j.\nFrom this general formulation, three basic types of interaction models can be derived:"
+    "text": "Three Basic Types of Interaction Models"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-SIM.html#gravity-models",
     "href": "lesson/Lesson03/Lesson03-SIM.html#gravity-models",
     "title": "Lesson 3: Spatial Interaction Models",
     "section": "Gravity Models",
-    "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\n\n\n\n\n𝛵𝑖𝑗 is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.\n\n\n\n\n\n\n\nNote\n\n\nSpatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals."
+    "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\n\n\n\n\n𝛵𝑖𝑗 is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜆, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.\n\n\n\n\n\n\n\nNote\n\n\nSpatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals."
   },
   {
     "objectID": "lesson/Lesson04/Lesson04-gwr.html#content",
@@ -936,5 +936,12 @@
     "title": "Lesson 3: Spatial Interaction Models",
     "section": "Effects of beta, alpha and lambda on Spatial Interactions",
     "text": "Effects of beta, alpha and lambda on Spatial Interactions\nVariations of the beta, alpha, and lambda exponents have different impacts on the level of spatial interactions."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SIM.html#a-family-of-gravity-models",
+    "href": "lesson/Lesson03/Lesson03-SIM.html#a-family-of-gravity-models",
+    "title": "Lesson 3: Spatial Interaction Models",
+    "section": "A Family of Gravity Models",
+    "text": "A Family of Gravity Models\n\nUnconstrained\nOrigin constrined\nDestination constrained\nDoubly constrained"
   }
 ]

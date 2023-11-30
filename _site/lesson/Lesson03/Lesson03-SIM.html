@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.361">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong  Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2023-11-29">
+  <meta name="dcterms.date" content="2023-11-30">
   <title>ISSS624 Applied Geospatial Analytics - Lesson 3: Spatial Interaction Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -339,7 +339,7 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">29 Nov 2023</p>
+  <p class="date">30 Nov 2023</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
@@ -429,10 +429,6 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <img data-src="img/image10-4.jpg" class="r-stretch quarto-figure-center"></section>
 <section id="three-basic-types-of-interaction-models" class="slide level2">
 <h2>Three Basic Types of Interaction Models</h2>
-<ul>
-<li>The general formulation of the spatial interaction model is stated as <strong>Tij</strong>, which is the interaction between location i (origin) and location j (destination). <strong>Vi</strong> are the attributes of the location of origin i, <strong>Wj</strong> are the attributes of the location of destination j, and <strong>Sij</strong> are the attributes of separation between the location of origin i and the location of destination j.</li>
-<li>From this general formulation, three basic types of interaction models can be derived:</li>
-</ul>
 
 <img data-src="img/image10-5.jpg" class="r-stretch quarto-figure-center"></section>
 <section id="gravity-models" class="slide level2">
@@ -454,7 +450,7 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <ul>
 <li>𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.</li>
 <li>𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.</li>
-<li>𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.</li>
+<li>𝑘, 𝜆, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.</li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -470,6 +466,42 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="effects-of-beta-alpha-and-lambda-on-spatial-interactions">Effects of beta, alpha and lambda on Spatial Interactions</h3>
+<p>Variations of the beta, alpha, and lambda exponents have different impacts on the level of spatial interactions.</p>
+
+<img data-src="img/image10-10.jpg" class="r-stretch"></section>
+<section id="a-family-of-gravity-models" class="slide level2">
+<h2>A Family of Gravity Models</h2>
+<ul>
+<li>Unconstrained</li>
+<li>Origin constrined</li>
+<li>Destination constrained</li>
+<li>Doubly constrained</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="the-unconstrained-totally-constrained-model">The Unconstrained (Totally constrained) Model</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The formula:</p>
+<p><img data-src="img/image10-6a.jpg"></p>
+<p>where</p>
+<p><img data-src="img/image10-6a1.jpg"></p>
+</div><div class="column" style="width:50%;">
+<p>In the Unconstrined Model,</p>
+<ul>
+<li>𝑣<sub>𝑖</sub> represents the origin propulsiveness variable(s).</li>
+<li>𝓌<sub>𝑗</sub> represents the destination attractiness variable(s).</li>
+<li>𝒹<sub>𝑖𝑗</sub> represents distance.</li>
+<li>𝑘, the scale parameter.</li>
+<li>𝜆, 𝛼, and 𝛽 represent exponents or parameters to be estimated for the origin propulsiveness variable(s), the destination attractiveness variable(s) and the distance respectively.</li>
+</ul>
 </div>
 </div>
 </section>
@@ -618,13 +650,8 @@ Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice)
 <p>Notice that A1 and B1 are computed by using computer.</p>
 </div>
 </div>
-</section>
-<section id="effects-of-beta-alpha-and-lambda-on-spatial-interactions" class="slide level2">
-<h2>Effects of beta, alpha and lambda on Spatial Interactions</h2>
-<p>Variations of the beta, alpha, and lambda exponents have different impacts on the level of spatial interactions.</p>
 
-
-<img data-src="img/image10-10.jpg" class="r-stretch"><div class="footer footer-default">
+<div class="footer footer-default">
 
 </div>
 </section>
