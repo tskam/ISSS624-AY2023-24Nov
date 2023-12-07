@@ -9,21 +9,21 @@ This handout provides the context, the task, the expectation and the grading cri
 
 ## Setting the Scene
 
-What are the driving forces behind urban dwellers to weak up early in morning to commute from their home locations to their work places? What are the impact of removing a public bus service on the commuters reside along the corridor of the bus route?  These and many other questions related to urban mobility are challenges faced by transport operators and urban managers.
+What are the driving forces behind urban dwellers to weak up early in morning to commute from their home locations to their work places? What are the impact of removing a public bus service on the commuters reside along the corridor of the bus route? These and many other questions related to urban mobility are challenges faced by transport operators and urban managers.
 
-To provide answer to this question, traditionally, commuters survey will be used.  However, commuters survey is a very costly, time-consuming and laborous, not to mention that the survey data tend to take a long time to clean and analyse.  As a result, it is not unusual, by the time the survey report was ready, most of the information already out-of-date!
+To provide answer to this question, traditionally, commuters survey will be used. However, commuters survey is a very costly, time-consuming and laborous, not to mention that the survey data tend to take a long time to clean and analyse. As a result, it is not unusual, by the time the survey report was ready, most of the information already out-of-date!
 
-As city-wide urban infrastructures such as public buses, mass rapid transits, public utilities and roads become digital, the data sets obtained can be used as a framework for tracking movement patterns through space and time. This is particularly true with the recent trend of massive deployment of pervasive computing technologies such as GPS on the vehicles and SMART cards used by public transport commuters. 
+As city-wide urban infrastructures such as public buses, mass rapid transits, public utilities and roads become digital, the data sets obtained can be used as a framework for tracking movement patterns through space and time. This is particularly true with the recent trend of massive deployment of pervasive computing technologies such as GPS on the vehicles and SMART cards used by public transport commuters.
 
-Unfortunately, this explosive growth of geospatially-referenced data has far outpaced the planner’s ability to utilize and transform the data into insightful information thus creating an adverse impact on the return on the investment made to collect and manage this data.
+Unfortunately, this explosive growth of geospatially-referenced data has far outpaced the planner's ability to utilize and transform the data into insightful information thus creating an adverse impact on the return on the investment made to collect and manage this data.
 
 ## Motivation and Objective
 
-This take-home exercise is motivated by two main reasons.  Firstly, despite increasing amounts of open data available for public consumption, there has not been significant practice research carried out to show how these disparate data sources can be integrated, analysed, and modelled to support policy making decisions. 
+This take-home exercise is motivated by two main reasons. Firstly, despite increasing amounts of open data available for public consumption, there has not been significant practice research carried out to show how these disparate data sources can be integrated, analysed, and modelled to support policy making decisions.
 
-Secondly, there is a general lack of practical research to show how geospatial data science and analysis (GDSA) can be used to support decision-making.  
+Secondly, there is a general lack of practical research to show how geospatial data science and analysis (GDSA) can be used to support decision-making.
 
-Hence, your task for this take-home exercise is to conduct a case study to demonstrate the potential value of GDSA to integrate publicly available data from multiple sources for building a spatial interaction models to determine factors affecting urban mobility patterns of public bus transit.  
+Hence, your task for this take-home exercise is to conduct a case study to demonstrate the potential value of GDSA to integrate publicly available data from multiple sources for building a spatial interaction models to determine factors affecting urban mobility patterns of public bus transit.
 
 ## The Data
 
@@ -31,13 +31,19 @@ Hence, your task for this take-home exercise is to conduct a case study to demon
 
 For the purpose of this assignment, data from several open government sources will be used:
 
-- *Passenger Volume by Origin Destination Bus Stops*, *Bus Stop Location*, *Train Station* and *Train Station Exit Point*, just to name a few of them, from [LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en.html).
+-   *Passenger Volume by Origin Destination Bus Stops*, *Bus Stop Location*, *Train Station* and *Train Station Exit Point*, just to name a few of them, from [LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en.html).
 
-- *Master Plan 2019 Subzone Boundary*, *HDB Property Information*, *School Directory and Information* and other relevant data from [Data.gov.sg](https://beta.data.gov.sg/).
+-   *Master Plan 2019 Subzone Boundary*, *HDB Property Information*, *School Directory and Information* and other relevant data from [Data.gov.sg](https://beta.data.gov.sg/).
 
 ### Specially collected data
 
--   Businesses, retail and services, leisure and recreation, etc geospatial data sets assemble by course instructor. (Refer to eLearn) 
+-   *Business*, *entertn*, *F&B*, *FinServ*, *Leisure&Recreation* and *Retails* are geospatial data sets of the locations of business establishments, entertainments, food and beverage outlets, financial centres, leisure and recreation centres, retail and services stores/outlets I compiled for urban mobility study. They are available on in the geospatial folder to Take-home Exercise 2 data folder.
+
+-   HDB: This data set is the geocoded version of *HDB Property Information* data from data.gov.  The data set is prepared using September 2021 data.  If you want to prepare you own data by using the latest *HDB Property Information* provided on data.gov.sg, this [link](https://is415-msty.netlify.app/posts/2021-10-25-take-home-exercise-3/?panelset6=glimpse%28%29#geocoding-our-aspatial-data) provides a useful step-by-step guide.  
+
+::: {.callout-important}
+These data sets are specially prepared by the course instructor for teaching purposes.  Students are not allowed to the use these data sets beyond ISSS624 without getting permission from the course instructor. 
+:::
 
 ## The Task
 
@@ -45,9 +51,9 @@ The specific tasks of this take-home exercise are as follows:
 
 ### Geospatial Data Science
 
--   Derive an analytical hexagon data of 325m (this distance is the perpendicular distance between the centre of the hexagon and its edges) to represent the [traffic analysis zone (TAZ)](https://tmg.utoronto.ca/files/Reports/Traffic-Zone-Guidance_March-2021_Final.pdf). 
+-   Derive an analytical hexagon data of 325m (this distance is the perpendicular distance between the centre of the hexagon and its edges) to represent the [traffic analysis zone (TAZ)](https://tmg.utoronto.ca/files/Reports/Traffic-Zone-Guidance_March-2021_Final.pdf).
 
--   With reference to the time intervals provided in the table below, construct an O-D matrix of commuter flows for a time interval of your choice by integrating *Passenger Volume by Origin Destination Bus Stops* and *Bus Stop Location* from [LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en.html).  The O-D matrix must be aggregated at the analytics hexagon level 
+-   With reference to the time intervals provided in the table below, construct an O-D matrix of commuter flows for a time interval of your choice by integrating *Passenger Volume by Origin Destination Bus Stops* and *Bus Stop Location* from [LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en.html). The O-D matrix must be aggregated at the analytics hexagon level
 
     | Peak hour period             | Bus tap on time |
     |------------------------------|-----------------|
@@ -62,7 +68,7 @@ The specific tasks of this take-home exercise are as follows:
 
 -   Assemble at least three propulsive and three attractiveness variables by using aspatial and geospatial from publicly available sources.
 
--  Compute a distance matrix by using the analytical hexagon data derived earlier. 
+-   Compute a distance matrix by using the analytical hexagon data derived earlier.
 
 ### Spatial Interaction Modelling
 
@@ -70,7 +76,7 @@ The specific tasks of this take-home exercise are as follows:
 
 -   Present the modelling results by using appropriate geovisualisation and graphical visualisation methods. (Not more than 5 visuals)
 
--   With reference to the Spatial Interaction Model output tables, maps and data visualisation prepared, describe the modelling results. (not more than 100 words per visual). 
+-   With reference to the Spatial Interaction Model output tables, maps and data visualisation prepared, describe the modelling results. (not more than 100 words per visual).
 
 ## Grading Criteria
 
@@ -97,4 +103,3 @@ This exercise will be graded by using the following criteria:
 17th December 2023 (Sunday), 11.59pm (midnight).
 
 ## Peer Learning
-
