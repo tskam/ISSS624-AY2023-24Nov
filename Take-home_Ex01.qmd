@@ -106,3 +106,52 @@ This exercise will be graded by using the following criteria:
 -   [AILYS TEE XYNYN](https://is415-ailystee.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)![](img/thumbup1.jpg). This is a take-home exercise submission for IS415 Geospatial Analytics and Applications (one of my undergraduate course). Overall very well prepared submission. The data preparation was very well done. The flow of analysis processes were appropriate. ![](img/new.jpg){width="30"}
 
 ## Peer Learning
+
+-   [CAI JINGHENG](https://isss624cjh.netlify.app/)
+-   [CHAI ZHIXUAN](https://czx-isss624.netlify.app/) ![](img/thumbup1.jpg) This is one of the two submission that includes steps on how to download the Passenger O-D data by using LTA DataMall API and opensource Postmen.  Refer to sub-section [3.1.1 Aspatial data](https://czx-isss624.netlify.app/take_home_ex1/take_home_ex1#aspatial-data).  Although it is incomplete (Step 3 :)) but still one of the best.  
+-   [CHAN JING WEI MAGDALENE](https://geospatial2023.netlify.app/)
+-   [CHENG CHUN CHIEH](https://isss624zjj.netlify.app/)
+-   [CHIA YONG SOON](https://isss624-chiays.netlify.app/)
+-   [CHOCK WAN KEE](https://cosmic-kitten.netlify.app/)
+-   [DABBIE NEO WEN MIN](https://isss624-geospatial-dabbieneo.netlify.app/)
+-   [FOONG CHUERN YUE DARREN](https://isss624-darren-foong.netlify.app/)
+-   [GAN WEI SHENG](https://isss624-worksheep.netlify.app/)
+-   [GOH SI HUI](https://gohsihui.netlify.app/)
+-   [HAILEY CHEONG SZE-YENN](https://aga-haileycsy.netlify.app/)
+-   [KE KE](https://kk815am.netlify.app/)
+-   [KOH CHIN WENG](https://zackkoh94.netlify.app/)
+-   [KRISTINE JOY PAAS](https://isss624-kjcpaas.netlify.app/) ![](img/thumbup1.jpg) Have done well in all five grading criteria especially the reproducibility, geovisualisation and geocommunication criteria. Geospatial Analytics criterion can be improved by including a paragraph describing the purpose, concepts and methods of the geospatial analytics used.
+-   [KWOK PEI SHAN](https://peishan0502-isss624.netlify.app/)
+-   [KYLIE TAN JING YI](https://isss624-kytjy.netlify.app/) ![](img/thumbup1.jpg) Section 5: Spatial Association Analysis of this submission provides a comprehensive discussion of the methods used and analysis results.
+-   [LANG SHUANG]()
+-   [LIANG YAO](https://isss624liangyao.netlify.app/)
+-   [LOH NIAN EN ALICIA](https://lnealicia-isss624.netlify.app/)
+-   [LOW JI XIONG](https://isss624-jayexx-assignments.netlify.app/)
+-   [MAH LIAN KHYE](https://isss624-liankhye.netlify.app/)
+-   [MICHAEL BERLIAN](https://isss624-mb.netlify.app/)
+-   [MUHAMAD AMEER NOOR](https://geospatialanalytics-ameer.netlify.app/) ![](img/thumbup1.jpg) Have done well in all five grading criteria including a short write-up of the geospatial analytics methods used.
+-   [NEO YI XIN](https://yixin-neo-isss624-aga.netlify.app/in-class_ex1/in-class_ex1)![](img/thumbup1.jpg) This submission put function programming of R into good used. For example, subsection [Processing the aspatial OD data](https://yixin-neo-isss624-aga.netlify.app/take-home_ex1/take-home_ex1#processing-the-aspatial-od-data) for processing data with same structure repetitively, [Task 1: Geovisulisation and Analysis](https://yixin-neo-isss624-aga.netlify.app/take-home_ex1/take-home_ex1#task-1-geovisulisation-and-analysis) to ensure that a same classification scale are used.  Further more Sub-section Computing Distance-Based Spatial Weights Matrix serves as a good example on how to discussion geospatial analytics methods used. There are at least three other students did show the spatial weights map but they are way too messy.
+-   [NOEL NG SER YING](https://isss624-noelng.netlify.app/)
+-   [OH JIA WEN](https://isss624-ohjiawen.netlify.app/)
+-   [ONG JIA HU EDWARD](https://isss624ed.netlify.app/)
+-   [PHAN HOANG LONG](https://phlong2023.netlify.app/)
+-   [PHYO ZIN HTET](https://isss624-zhphyo.netlify.app/)
+-   [PIRAPAT CHAIYA](https://isss624-pirapatc.netlify.app/)
+-   [QIU RUILIU](https://ruiliu-isss624.netlify.app/)
+-   [QUEK YOU TING](https://ytisss624.netlify.app/)
+-   [SU SANDI CHO WIN](https://isss624scwsu2023.netlify.app/)
+-   [TEN WEI PENG](https://fantastic-selkie-833122.netlify.app/)
+-   [TOA ZI YING JANET](https://janettoaisss624.netlify.app/)
+-   [TOH CHIN FOONG](https://isss624cftoh.netlify.app/)
+-   [WANG YIZAO](https://y1zaowang-isss624.netlify.app/)
+-   [WANG YUHUI](https://isss624wyh.netlify.app)
+-   [WIDYA TANTIYA YUTIKA](https://isss624-geospatial.netlify.app/)
+-   [WOO JIA JIAN](https://isss624jjwoo.netlify.app/)
+-   [XU LIN](https://isss624xulin.netlify.app/)
+-   [ZHANG CUNLEI](https://isss624-stella.netlify.app)
+-   [ZHAO ZECHENG](https://zecheng-isss624.netlify.app/)
+
+
+
+
+
