@@ -1,5 +1,5 @@
 ---
-title: "Lesson 5: Spatial Econometric Interaction MOdels"
+title: "Lesson 5: Spatial Econometric Interaction Models"
 date: "13 Nov, 2023"
 date-modified: "last-modified"
 format: html
@@ -26,11 +26,11 @@ To read before class:
 
 -   [" Chapter 6. Spatial econometrics - common models"](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-j-chapitre-6.pdf), Handbook of Spatial Analysis.
 
--   James P. LeSage and R. Kelley Pace (2008) ["Spatial Econometric Modeling of Origin-Destination Flows"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9787.2008.00573.x). *Journal of Regional Science*, Vol. 48, No. 5, pp. 941-967. 
+-   James P. LeSage and R. Kelley Pace (2008) ["Spatial Econometric Modeling of Origin-Destination Flows"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9787.2008.00573.x). *Journal of Regional Science*, Vol. 48, No. 5, pp. 941-967.
 
 ### References
 
 ### All About R
 
 -   [spflow](https://lukece.github.io/spflow/index.html)
-  -   [Home-to-work commuting flows within the municipalities around Paris](https://lukece.github.io/spflow/articles/paris_commute_flows.html)
+-   [Home-to-work commuting flows within the municipalities around Paris](https://lukece.github.io/spflow/articles/paris_commute_flows.html)
