@@ -1,0 +1,106 @@
+---
+title: "Lesson 5: Spatial Econometrics Interaction Modelling"
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: all
+date-format: "DD MMM YYYY"
+execute: 
+  echo: true
+  eval: true
+  warning: false
+editor: visual
+---
+
+## Content
+
+-   What is Spatial Econometrics?
+
+-   What is Spatial Econometric Interaction Models?
+
+-   Introducing spflow package
+
+-   Spatial Econometric Modelling of O-D Flows: spflow application
+
+## What is Econometrics
+
+-   Econometrics is an application of statistical methods to economic data in order to give empirical content to economic relationships. More precisely, it is "the quantitative analysis of actual economic phenomena based on the concurrent development of theory and observation, related by appropriate methods of inference.
+
+-   A basic tool for econometrics is the multiple linear regression model.
+
+-   Econometric theory uses statistical theory and mathematical statistics to evaluate and develop econometric methods.
+
+-   Econometricians try to find estimators that have desirable statistical properties including unbiasedness, efficiency, and consistency.
+
+-   Applied econometrics uses theoretical econometrics and real-world data for assessing economic theories, developing econometric models, analysing economic history, and forecasting.
+
+## What is Spatial Econometrics?
+
+-   A branch of economics that deals with the study of economic phenomena that exhibit spatial dependence.
+-   This branch of economics has its roots in classical economics, which focused on the study of how economic activity was related to the location of factors of production.
+-   Classical economists developed theories of how businesses locate themselves in relation to their markets and to each other. These theories formed the basis for the development of modern spatial economics.
+
+## What is Spatial Econometrics?
+
+-   In a broader sense it is inclusive of the models and theoretical instruments of spatial statistics and spatial data analysis to analyze various economic effects such as **externalities**, **interactions**, **spatial concentration** and many others.
+-   Discrete spatial data can take the form of points, lines and polygons. **Point** data refer to the position of the single economic agent observed at an individual level. **Lines** in space take the form of interactions between two spatial locations such as flows of goods, individuals and information. Finally data observed within **polygons** can take the form of predefined irregular portions of space, usually administrative partitions such as countries, regions or counties within one country.
+
+## What Are The Examples of Applications Using Spatial Econometrics ?
+
+There are many applications for spatial econometrics . Here are a few examples :
+
+-   Evaluating the impact of a new road or railway on property values.
+-   Estimating the effect of environmental regulations on firm location decisions.
+-   Analyzing the determinants of crime rates across neighborhoods
+-   Studying the relationship between house prices and income levels in different regions.
+-   Investigating the spread of infectious diseases through a population.
+-   Modeling the relationship between land values and location-specific services.
+-   Analyzing the relationship between proximity to facilities and job opportunities .
+
+## Limitation of Spatial Interaction Models
+
+-   The gravity model assumes independence among observations, and this assumption seems heroic for many fundamentally spatial problems.
+
+![](img/image5-1.jpg)
+
+## Limitation of Spatial Interaction Models
+
+There are two technical limitations of SIM:
+
+-   Maximum-likelihood estimates require that the dependent variable vector follow a normal distribution or that it can be suitably transformed to achieve normality.
+
+-   Maximum-likelihood method is not appropriate when there are a large number of zero flows exist.
+
+## Spatial Econometric Interaction Model
+
+The general formula of Spatial Econometric Interaction Model is defined as follow:
+
+![](img/image5-2.jpg)
+
+where by 𝐖~𝓭~, 𝐖~𝒐~ and 𝐖~𝓌~ are spatial weights of destination, origin and origin-destination.
+
+## Spatial Model Specification for Origin-Destination Flows
+
+![](img/image5-3.jpg)
+
+## Spatial Model Specification for Origin-Destination Flows
+
+![](img/image5-4.jpg)
+
+## Spatial Model Specification for Origin-Destination Flows
+
+![](img/image5-5.jpg)
+
+```{r}
+#| eval: false
+#| echo: false
+
+renderthis::to_pdf(from = "https://isss624-ay2023-24nov.netlify.app/lesson/Lesson05/Lesson05-SEIM.html",
+                   to = "../../_site/lesson/Lesson05/Lesson05-SEIM.pdf")
+```
